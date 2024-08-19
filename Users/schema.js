@@ -15,6 +15,7 @@ const userSchema = new mongoose.Schema({
     section: String,
     lastActivity: Date,
     totalActivity: String,
+    enrolledCourses: [{ type: String }],  // Add enrolledCourses as an array of strings
   },
   { collection: "users" }
 );
